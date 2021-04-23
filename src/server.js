@@ -7,7 +7,6 @@ const logger = require('./middleware/logger.js');
 const catRoutes = require('./routes/cat-routes.js');
 const dogRoutes = require('./routes/dog-routes.js');
 
-
 const notFound = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
 
