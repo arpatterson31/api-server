@@ -3,7 +3,7 @@
 const express = require('express');
 
 const GenericCollection = require('../models/data-collection-class.js'); // bring in generic model
-const catModel = require('../models/cat-schema'); // bring in cat model/schema
+const catModel = require('../models/cat-schema.js'); // bring in cat model/schema
 const cat = new GenericCollection(catModel); // run cat model through generic collection to use on routes
 
 const catRouter = express.Router();
