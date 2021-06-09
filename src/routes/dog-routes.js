@@ -20,7 +20,7 @@ async function getAllDogs(req, res) {
 }
 
 async function getOneDog(req, res) {
-  const id = +req.params.id;
+  const id = req.params.id;
   const theDog = await dog.read(id);
   res.status(200).json(theDog);
 }
@@ -32,16 +32,16 @@ async function createDog(req, res) {
 }
 
 async function updateDog(req, res) {
-  const id = +req.params.id;
+  const id = req.params.id;
   const data = req.body;
   const updatedDog = await dog.update(id, data);
   res.status(200).json(updatedDog);
 }
 
 async function deleteDog(req, res) {
-  const id = +req.params.id;
+  const id = req.params.id;
   const deletedDog = await dog.delete(id);
-  res.status(200).json('Delete Successful');
+  res.status(200).json(deletedDog);
 }
 
 
