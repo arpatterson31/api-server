@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const logger = require('./middleware/logger.js');
@@ -10,6 +11,7 @@ const dogRoutes = require('./routes/dog-routes.js');
 const notFound = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
 
+app.use(cors());
 app.use(express.json());
 
 app.use(logger);
