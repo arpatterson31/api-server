@@ -44,5 +44,4 @@ async function deleteDog(req, res) {
   res.status(200).json(deletedDog);
 }
 
-
 module.exports = dogRouter;

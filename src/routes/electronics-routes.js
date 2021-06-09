@@ -50,7 +50,4 @@ async function deleteElectronic(req, res) {
   res.status(201).json(deletedElectronic);
 }
 
-module.exports = { 
-  electronicsRouter,
-  electronic
-};
+module.exports = electronicsRouter;

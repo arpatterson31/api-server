@@ -51,7 +51,4 @@ async function deleteClothes(req, res) {
   res.status(201).json(deletedClothes);
 }
 
-module.exports = {
-  clothesRouter,
-  clothes
-}
+module.exports = clothesRouter;

@@ -50,7 +50,4 @@ async function deleteFood(req, res) {
   res.status(201).json(deletedFood);
 }
 
-module.exports = { 
-  foodRouter,
-  food
-};
+module.exports = foodRouter;
