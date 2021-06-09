@@ -10,6 +10,7 @@ const dogRoutes = require('./routes/dog-routes.js');
 const foodRoutes = require('./routes/food-routes.js');
 const clothesRoutes = require('./routes/clothes-routes.js');
 const electronicsRoutes = require('./routes/electronics-routes.js');
+const productsRoutes = require('./routes/products-routes.js');
 
 const notFound = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
@@ -24,6 +25,7 @@ app.use(dogRoutes);
 app.use(foodRoutes);
 app.use(clothesRoutes);
 app.use(electronicsRoutes);
+app.use(productsRoutes);
 
 app.use('*', notFound);
 app.use(errorHandler);
